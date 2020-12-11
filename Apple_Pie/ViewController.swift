@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var treeImageView: UIImageView!
-    
+    @IBOutlet var point: UILabel!
     @IBOutlet var correctWordLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var letterButtons: [UIButton]!
@@ -67,6 +67,11 @@ class ViewController: UIViewController {
         correctWordLabel.text = wordWithSpacing
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+        
+        // add one point per one right letter
+        point.text = "score: \(currentGame.points)"
+        
+        
     }
 
     @IBAction func letterButtonPressed(_ sender: UIButton) {

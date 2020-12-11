@@ -8,6 +8,8 @@
 import Foundation
 
 struct Game {
+    
+    var points = 0
     var word: String
     var incorrectMovesRemaining: Int
     var guessedLetters: [Character]
@@ -27,7 +29,8 @@ struct Game {
         guessedLetters.append(letter)
         if !word.contains(letter) {
             incorrectMovesRemaining -= 1
+        } else {
+            points += 1
         }
     }
-    
 }

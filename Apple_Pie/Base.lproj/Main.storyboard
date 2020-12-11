@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="974"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="DDd-dp-Zdu">
-                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="824"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="794"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u1Q-pY-REf">
-                                        <rect key="frame" x="0.0" y="824" width="1366" height="150"/>
+                                        <rect key="frame" x="0.0" y="794" width="1366" height="180"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-LG-4Qq">
                                                 <rect key="frame" x="532.5" y="0.0" width="301" height="30"/>
@@ -237,6 +237,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsF-az-gWo">
+                                                <rect key="frame" x="660.5" y="150" width="45" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -255,6 +261,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="correctWordLabel" destination="3ms-Sa-Zyk" id="EYk-UY-nCq"/>
+                        <outlet property="point" destination="WsF-az-gWo" id="y5z-5V-XTc"/>
                         <outlet property="scoreLabel" destination="IXE-9Z-cqb" id="aQs-dV-pcr"/>
                         <outlet property="treeImageView" destination="DDd-dp-Zdu" id="8dQ-0Z-qC6"/>
                         <outletCollection property="letterButtons" destination="qeN-kh-gZs" collectionClass="NSMutableArray" id="x1N-Dz-xPj"/>
